@@ -1,0 +1,30 @@
+/**app.wxss**/
+@import "./utils/wxParse/wxParse.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50rpx 0;
+  box-sizing: border-box;
+} 
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 518032 */
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:30rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dibiao:before{content: '\e64d';}

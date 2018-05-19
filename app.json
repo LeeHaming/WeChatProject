@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/checkin/checkin",
+    "pages/home/home",
+    "pages/interactive/interactive",
+    "pages/postRequest/postRequest",
+    "pages/remarkRequest/remarkRequest",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "绑定信息",
+        "iconPath": "image/page1_bind.png",
+        "selectedIconPath": "image/page1_bind.png"
+      },
+      {
+        "pagePath": "pages/interactive/interactive",
+        "text": "互动论坛",
+        "iconPath": "image/page1_interactive.png",
+        "selectedIconPath": "image/page1_interactive.png"
+      },
+      {
+        "pagePath": "pages/checkin/checkin",
+        "text": "在线签到",
+        "iconPath": "image/page1_checkin.png",
+        "selectedIconPath": "image/page1_checkin.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "与我相关",
+        "iconPath": "image/page1_me.png",
+        "selectedIconPath": "image/page1_me.png"
+      }
+    ]
+  }
+}

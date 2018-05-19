@@ -1,0 +1,43 @@
+<!--pages/remarkRequest/remarkRequest.wxml-->
+<!--
+<view class="item" wx:for="{{remarks}}">  
+  <view class="td">帖子内容：{{item.postContent}}</view>
+  <view class="td">帖子评论：{{item.postRemark}} </view>
+</view> -->
+<view class="navigate">
+<text >点击文章标题查看详细内容</text>
+</view>
+<view class="log-list">
+  <block wx:for="{{posts}}">
+    <text class="log-item" id="{{item.postId}}" bindtap='getDetail'>{{index+1}}. 帖子标题：{{item.postTitle}}</text>
+    <text class="log-item">帖子作者：{{item.userNumber}}</text>
+  </block>
+</view>
+
+<!--<import src="../../utils/wxParse/wxParse.wxml"/>
+
+<view class="post_container">
+  <view class="post">-->
+    <!--<view class="item" wx:for="{{image_covers}}">-->
+    <!--
+      <cover-image src="../../image/{{image_covers[0]}}"></cover-image>
+      <template is="wxParse" data="{{wxParseData:content1.nodes}}"/>
+      <textarea>作者学号：14010110001</textarea>
+
+      <cover-image src="../../image/{{image_covers[1]}}"></cover-image>
+      <template is="wxParse" data="{{wxParseData:content2.nodes}}"/>
+      <textarea>点击查看详情</textarea>
+      <cover-image src="../../image/{{image_covers[2]}}"></cover-image>
+      <template is="wxParse" data="{{wxParseData:content3.nodes}}"/>
+      <textarea>点击查看详情</textarea>
+      <cover-image src="../../image/{{image_covers[3]}}"></cover-image>
+      <template is="wxParse" data="{{wxParseData:content4.nodes}}"/>
+      <textarea>点击查看详情</textarea>
+      <cover-image src="../../image/{{image_covers[4]}}"></cover-image>
+      <template is="wxParse" data="{{wxParseData:content5.nodes}}"/>
+      <textarea>点击查看详情</textarea>
+      -->
+      
+    <!--</view>-->
+ <!-- </view>
+</view>-->

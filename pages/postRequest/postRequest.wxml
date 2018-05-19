@@ -1,0 +1,6 @@
+<!--pages/postRequest/postRequest.wxml-->
+<view >
+  <textarea class="title" name="title" placeholder="帖子标题..." bindinput='getPostTitle'></textarea>
+  <textarea class="content" name="content" placeholder="帖子内容..." bindinput='getPostContent'></textarea> 
+  <button type="primary"  bindtap="putPost" hover-class="none" class="margin-button"> 发布 </button>
+</view>

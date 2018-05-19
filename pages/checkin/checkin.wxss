@@ -1,0 +1,30 @@
+/* pages/checkin/checkin.wxss */
+.checkbox-area{
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox{
+  color: #888;
+  align-items: center;
+  justify-content: space-between;
+}
+.checkbox input{
+  background: #09bb07;
+  border: 0 none;
+}
+/** 修改button默认的点击态样式类**/
+.button-hover {
+  background-color: yellow;
+  opacity: 0.7;
+}
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+  background-color: green;
+  opacity: 0.7;
+}
+.margin-button{
+  height: 40px;
+  width: 100px;
+  margin-top: 50px;
+}

@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    <text class="userinfo-nickname">{{"学号："+userBindInfo[0].value}}</text>
+    <text class="userinfo-nickname">{{"姓名："+userBindInfo[1].value}}</text>
+    <text class="userinfo-nickname">{{"任课老师："+userBindInfo[2].value}}</text>
+
+  <button type="primary"  bindtap="postRequst" hover-class="none" class="margin-button"> 我要发贴 </button>
+  <button type="primary"  bindtap="remarkRequest" hover-class="none" class="margin-button"> 查看评论 </button>
+</view>
+  

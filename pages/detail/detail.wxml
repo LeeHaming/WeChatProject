@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view><text>帖子内容</text></view>
+<view><text>{{postContent}}</text></view>
+<view><text>已有评论</text></view>
+
+<view class="log-list">
+  <block wx:for="{{postRemarks}}" wx:key="postRemarks" wx:for-index="index">
+    <text class="log-item" >{{index+1}}.{{item.value}}</text>
+  </block>
+</view>
+<view >
+  <textarea class="title" placeholder="你的评论..." bindinput='getNewPostRemark'></textarea>
+  <button type="primary"  bindtap="putRemark" hover-class="none" class="margin-button"> 发表评论 </button>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/remarkRequest/remarkRequest.wxml-->
+<!--
+<view class="item" wx:for="{{remarks}}">  
+  <view class="td">帖子内容：{{item.postContent}}</view>
+  <view class="td">帖子评论：{{item.postRemark}} </view>
+</view> -->
+<view class="log-list">
+  <block wx:for="{{remarks}}">
+    <text class="log-item">{{index+1}}. 帖子内容：{{item.postContent}}</text>
+    <text class="log-item">帖子评论：{{item.postRemark}}</text>
+  </block>
+</view>

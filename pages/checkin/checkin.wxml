@@ -1,0 +1,12 @@
+<!--pages/checkin/checkin.wxml-->
+
+<view class=''>
+  <checkbox-group  bindchange="checkboxChange">
+    <label class="checkbox" wx:for-items="{{checkboxitems}}">
+      <checkbox value='{{item.name}}' checked='{{item.checked}}'>{{item.value}}</checkbox>
+    </label>
+  </checkbox-group>
+</view>
+<button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="setPrimary" hover-class="none" class="margin-button" bindtap="checkIn"> 签到 </button>
+
+<icon class="iconfont icon-dibiao">{{address}}</icon>

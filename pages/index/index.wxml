@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>姓名：
+  <input wx:if="{{!hasUserBindInfo}}" name="userName" placeholder="请输入姓名" bindinput='getUserName' />
+  <input wx:else name="userName" placeholder="{{userBindInfo[0].value}}" bindinput='getUserName' disabled='disabled'/>
+  </view>
+  <view>学号：
+      <input wx:if="{{!hasUserBindInfo}}" name="userNumber" placeholder="请输入学号" bindinput='getUserNumber'/>
+      <input wx:else name="userNumber" placeholder="{{userBindInfo[1].value}}" bindinput='getUserNumber' disabled='disabled'/>
+  </view>
+  <view>任课老师：</view>
+    <view class="cxj-menu">
+      <view class="flex-view{{item.active?' active':''}}" wx:for="{{tabTxt}}" wx:key="" data-index="{{index}}" bindtap="filterTab">
+        <text>{{item.text}}</text>
+      </view>
+  </view>
+<!-- tab下拉选项布局 -->
+<view class="cxj-tab-layout" hidden="{{!item.active}}" wx:for="{{tabTxt}}"  wx:for-item="item" data-index="{{index}}" bindtap="filterTabChild">
+    <view class="{{item.type==0?'active':''}}"  data-id="0" data-index="0" >点击选择老师</view>
+    <view name="teacher" class="{{item.type==item_child.id?'active':''}}" wx:for="{{item.child}}" wx:for-item="item_child" wx:key="" data-id="{{item_child.id}}" data-index="0" data-txt="{{item_child.text}}" >{{item_child.text}}</view>
+</view>
+
+<button wx:if="{{!hasUserBindInfo}}" type="primary"  bindtap="bind" hover-class="none" class="margin-button"> 绑定 </button>
+<button  type="primary"  bindtap="bind" hover-class="none" class="margin-button" wx:else> 重新绑定 </button>
+</view>
